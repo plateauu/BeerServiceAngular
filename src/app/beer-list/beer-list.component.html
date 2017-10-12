@@ -1,0 +1,15 @@
+<h2>Beer List: </h2>
+
+<div>
+  <label>new beer: </label>
+  <input [(ngModel)]="name" placeholder="beer name"/>
+  <button (click)="addBeer()">Save</button>
+  <br>
+</div>
+
+<div *ngFor="let b of beers">
+  {{b.name}}<br>
+  <img src="{{b.giphyUrl}}" width="200" alt="{{b.name}}">
+
+</div>
+
